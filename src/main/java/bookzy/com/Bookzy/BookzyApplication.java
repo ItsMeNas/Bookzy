@@ -10,8 +10,15 @@ import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @ComponentScan(basePackages={"bookzy.com.Bookzy"})
-
+@RestController
+@EnableAutoConfiguration
 public class BookzyApplication {
+
+
+ @RequestMapping("/")
+    String home() {
+        return "Hello World Spring Boot!";
+    }
 
 	public static void main(String[] args) {
 		SpringApplication.run(BookzyApplication.class, args);
