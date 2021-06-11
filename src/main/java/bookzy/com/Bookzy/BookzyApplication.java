@@ -17,7 +17,7 @@ public class BookzyApplication {
 
  @RequestMapping("/")
     String home() {
-        return "Hello World Spring Boot!";
+        return "<center>Hello World Spring Boot!<\center>\\n\\n<center>This is BOOKZY Online!<\center>";
     }
 
 	public static void main(String[] args) {
